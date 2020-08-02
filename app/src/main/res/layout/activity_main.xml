@@ -154,6 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="New User? Register Now"
+        android:onClick="registration"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -171,6 +172,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
+        android:onClick="contactus"
         app:layout_constraintTop_toBottomOf="@+id/txtNewUser"
         app:srcCompat="@drawable/ic_baseline_contacts_24" />
 
@@ -179,6 +181,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="aboutus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/txtNewUser"

@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i=new Intent(getBaseContext(),activity_aboutus.class);
         startActivity(i);
     }
+
+    public void registration(View view) {
+        Intent i=new Intent(getBaseContext(),activity_registration.class);
+        startActivity(i);
+    }
 }

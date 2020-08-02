@@ -7,6 +7,16 @@
     tools:context=".MainActivity"
     tools:ignore="ContentDescription">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <View
         android:id="@+id/topView"
         android:layout_width="0dp"
@@ -37,6 +47,15 @@
         app:layout_constraintStart_toEndOf="@+id/topText"
         app:layout_constraintTop_toTopOf="@+id/topView"
         app:srcCompat="@drawable/ic_person" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="98dp"
+        android:layout_height="83dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wave"
+        app:srcCompat="@drawable/logo2" />
 
     <TextView
         android:id="@+id/topText"
@@ -72,7 +91,7 @@
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wave" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
         android:id="@+id/inputPassword"
@@ -95,7 +114,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -103,9 +122,53 @@
         android:layout_marginRight="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="Button"
+        android:background="@drawable/round_button"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+
+    <TextView
+        android:id="@+id/txtForgon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="FORGOT PASSWORD ?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <TextView
+        android:id="@+id/txtOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="OR"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtForgon" />
+
+    <TextView
+        android:id="@+id/txtNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="New User? Register Now"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

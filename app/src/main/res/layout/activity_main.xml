@@ -182,7 +182,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNewUser"
-        app:srcCompat="@drawable/ic_baseline_contacts_24" />
+        app:srcCompat="@drawable/ic_baseline_contacts_24"
+        android:onClick="contactus"/>
 
     <ImageView
         android:id="@+id/imageView4"
@@ -194,6 +195,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/txtNewUser"
-        app:srcCompat="@drawable/ic_baseline_details_24" />
+        app:srcCompat="@drawable/ic_baseline_details_24"
+        android:onClick="aboutus"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

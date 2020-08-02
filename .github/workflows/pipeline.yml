@@ -17,6 +17,6 @@ jobs:
         to: ${{ secrets.MESSAGEID }}
         token: ${{ secrets.BOTTOKEN }}
         message: |
-          Project: GitDemo
+          Project: Free Chat App
           Commit Message: ${{ github.event.head_commit.message }}
           Commited Actor: ${{ github.actor }}

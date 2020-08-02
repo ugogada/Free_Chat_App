@@ -129,7 +129,7 @@
         android:layout_marginRight="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="FORGOT PASSWORD ?"
+        android:text="Forgot Password ?"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
